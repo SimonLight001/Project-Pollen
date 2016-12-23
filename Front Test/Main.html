@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Project Pollen</title>
-	<link rel="stylesheet" href="Style.css">
-	<link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 <body>
-	<nav class="fixed-nav-bar">
-		<nav class="nav-bar-content">
-			<b>Project Pollen</b>
-		</nav>
-	</nav>
-	This is project pollen
+
+<ul class="topnav" id="myTopnav">
+  <li><a class="active" href="#home">Logo</a></li>
+  <li><a href="#news">Item</a></li>
+  <li><a href="#contact">Item</a></li>
+  <li><a href="#about">Item</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+<ul class="secnav" class="topnav" id="mySecnav">
+  <li><a href="#user"><b>Username</b></a></li>
+  <li><a href="#news">Item</a></li>
+  <li><a href="#contact">Item</a></li>
+  <li><a href="#about">Item</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
 </body>
 </html>
