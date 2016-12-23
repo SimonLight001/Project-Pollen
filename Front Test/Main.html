@@ -4,27 +4,38 @@
 <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 <body>
+	<div class="topBars">
+		<ul class="topnav" id="myTopnav">
+		  <li><a class="active" href="#home">Logo</a></li>
+		  <li><a href="#news">Item</a></li>
+		  <li><a href="#contact">Item</a></li>
+		  <li><a href="#about">Item</a></li>
+		  <li class="icon">
+		    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+		  </li>
+		</ul>
 
-<ul class="topnav" id="myTopnav">
-  <li><a class="active" href="#home">Logo</a></li>
-  <li><a href="#news">Item</a></li>
-  <li><a href="#contact">Item</a></li>
-  <li><a href="#about">Item</a></li>
-  <li class="icon">
-    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
-  </li>
-</ul>
+		<ul class="secnav" id="mySecnav">
+		  <li><a href="#user"><b>Username</b></a></li>
+		  <li><a href="#news">Item</a></li>
+		  <li><a href="#contact">Item</a></li>
+		  <li><a href="#about">Item</a></li>
+		  <li class="icon">
+		    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+		  </li>
+		</ul>
+	</div>
 
-<ul class="secnav" class="topnav" id="mySecnav">
-  <li><a href="#user"><b>Username</b></a></li>
-  <li><a href="#news">Item</a></li>
-  <li><a href="#contact">Item</a></li>
-  <li><a href="#about">Item</a></li>
-  <li class="icon">
-    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
-  </li>
-</ul>
+	<div class="content">
+		<ul class="contRow" id="myContRow">
+		  <li class="tileBig"><a href="#user"><b>Username</b></a><div class="text">Test</div></li>
+		  <li class="tileBig"><a href="#user"><b>Username</b></a></li>
+		  <li class="icon">
+		    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+		  </li>
+		</ul>
 
+	</div>
 
 <script>
 function myFunction() {

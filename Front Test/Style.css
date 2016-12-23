@@ -1,22 +1,81 @@
 body {margin:0;}
+
+.content {
+    width: 100%;
+}
+
+ul.contRow {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    background-color: white;
+}
+
+ul.contRow li {
+    float: left;
+    padding-right: 35px;
+}
+
+ul.contRow li.tileBig {
+    width: 30%;
+    height: 300px;
+}
+
+ul.contRow li.tileBig a {
+    padding-top: 145px;
+    background-image: url("face.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(7px);
+}
+
+ul.contRow .text {
+    padding-top: 145px;
+    z-index: 100;
+}
+
+ul.contRow li.tileBig b {
+    filter: none;
+}
+
+
+ul.contRow li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 45px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    width: 100%;
+    height: 100px;
+}
+
+ul.contRow li a:hover {
+    filter: none;
+}
+
+ul.contRow li.icon {display: none;}
+
 ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
 ul.topnav li {float: left;}
 
 ul.topnav li a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
 }
 
 ul.topnav li a:hover {background-color: #555;}
@@ -24,24 +83,24 @@ ul.topnav li a:hover {background-color: #555;}
 ul.topnav li.icon {display: none;}
 
 ul.secnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #4d4d4d;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4d4d4d;
 }
 
 ul.secnav li {float: left;}
 
 ul.secnav li a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 20px 20px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 24px;
-  font-weight: bold;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 
@@ -74,3 +133,4 @@ ul.secnav li.icon {display: none;}
     text-align: left;
   }
 }
+
