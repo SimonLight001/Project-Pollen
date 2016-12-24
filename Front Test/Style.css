@@ -30,6 +30,32 @@ ul.contRow li.tileBig a {
     filter: blur(7px);
 }
 
+ul.contRow li.tileMedium {
+    width: 20%;
+    height: 300px;
+}
+
+ul.contRow li.tileMedium a {
+    padding-top: 145px;
+    background-image: url("face.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(7px);
+}
+
+ul.contRow li.tileSmall {
+    width: 10%;
+    height: 10px;
+}
+
+ul.contRow li.tileSmall a {
+    padding-top: 145px;
+    background-image: url("face.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(7px);
+}
+
 ul.contRow .text {
     padding-top: -100px;
     padding-bottom: 100px;
