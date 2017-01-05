@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="Style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="topBars">
@@ -26,18 +27,24 @@
 		</ul>
 	</div>
 
-	<!-- Content Starts Here -->
-
 	<div class="content">
-		<ul class="contRow" id="myContRow">
-		  <li class="tileBig"><a href="#user"><b class="text">Username</b></a></li>
-		  <li class="tileMedium"><a href="#user"><b>Username</b></a></li>
-		  <li class="tileSmall"><a href="#user"><b>Username</b></a></li>
-		  <li class="icon">
-		    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
-		  </li>
-		</ul>
-
+		<div class="row" id="myContRow">
+		  <div class="pollen-content" data-size="1x1"><div class="img"><div class="overlay"></div><img src="1.jpg"></img></div></div>
+		  <div class="pollen-content" data-size="1x1"></div>
+		  <div class="pollen-content" data-size="1x1"></div>
+		  <div class="pollen-content" data-size="1x1"></div>
+		  <div class="pollen-content" data-size="1x1"></div>
+		  <div class="pollen-content" data-size="2x1"><div class="img"><div class="overlay"><p>"Blablablaba, blablablabla"</p><div class="bottom-bar"><p>Simon Light</p><img src="1.jpg"></img></div></div></div><img src="3.jpg"></img></div></div>
+		  <div class="pollen-content" data-size="1x1"></div>
+		  <div class="pollen-content" data-size="1x1" style="background-color: #333333;"></div>
+		  <div class="pollen-content" data-size="2x1"></div>
+		  <div class="pollen-content" data-size="2x1"></div>
+		  <div class="pollen-content" data-size="1x1"></div>
+		  <div class="pollen-content" data-size="1x1" style="background-color: #333333;"></div>
+		  <div class="pollen-content" data-size="1x1"></div>
+		  <div class="pollen-content" data-size="1x1"></div>
+		  <div class="pollen-content" data-size="1x1" style="background-color: #333333;"></div>
+		</div>
 	</div>
 
 <script>
@@ -50,6 +57,6 @@ function myFunction() {
     }
 }
 </script>
-
+<script src="./Main.js"></script>
 </body>
 </html>

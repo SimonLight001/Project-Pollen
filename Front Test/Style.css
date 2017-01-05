@@ -4,6 +4,10 @@ body {margin:0;}
     width: 100%;
 }
 
+#myContRow{
+    height: 100%;
+}
+
 ul.contRow {
     list-style-type: none;
     margin: 0;
@@ -14,7 +18,7 @@ ul.contRow {
 
 ul.contRow li {
     float: left;
-    padding-right: 45px;
+    padding-right: 35px;
 }
 
 ul.contRow li.tileBig {
@@ -30,37 +34,9 @@ ul.contRow li.tileBig a {
     filter: blur(7px);
 }
 
-ul.contRow li.tileMedium {
-    width: 20%;
-    height: 300px;
-}
-
-ul.contRow li.tileMedium a {
-    padding-top: 145px;
-    background-image: url("face.jpg");
-    background-size: cover;
-    background-position: center;
-    filter: blur(7px);
-}
-
-ul.contRow li.tileSmall {
-    width: 10%;
-    height: 10px;
-}
-
-ul.contRow li.tileSmall a {
-    padding-top: 145px;
-    background-image: url("face.jpg");
-    background-size: cover;
-    background-position: center;
-    filter: blur(7px);
-}
-
 ul.contRow .text {
-    padding-top: -100px;
-    padding-bottom: 100px;
+    padding-top: 145px;
     z-index: 100;
-    
 }
 
 ul.contRow li.tileBig b {
@@ -82,8 +58,6 @@ ul.contRow li a {
 
 ul.contRow li a:hover {
     filter: none;
-    width: 104%;
-    transition: 0.3s;
 }
 
 ul.contRow li.icon {display: none;}
@@ -164,3 +138,62 @@ ul.secnav li.icon {display: none;}
   }
 }
 
+.pollen-content {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: #666666;
+    transition: 1s;
+}
+
+.pollen-content img {
+    height:100%;
+    width: 100%;
+    margin: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: .5s;
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.31);
+}
+
+.overlay p {
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    font-size: 30px;
+}
+
+.bottom-bar {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom-bar img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding-bottom: 10px;
+    float: right;
+    padding-right: 5px;
+}
+
+.bottom-bar p {
+    font-family: "Times New Roman", Times, serif;
+    text-align: right;
+    font-size: 15px;
+}
+
+.img:hover .overlay, .overlay:hover {
+    height: 0;
+}
