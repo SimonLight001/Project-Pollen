@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="topBars">
+		<ul class="topnav" id="myTopnav">
+		  <li><a class="active" href="#home">Logo</a></li>
+		  <li><a href="#news">Item</a></li>
+		  <li><a href="#contact">Item</a></li>
+		  <li><a href="#about">Item</a></li>
+		  <li class="icon">
+		    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+		  </li>
+		</ul>
+
+		<ul class="secnav" id="mySecnav">
+		  <li><a href="#user"><b>Username</b></a></li>
+		  <li><a href="#news">Item</a></li>
+		  <li><a href="#contact">Item</a></li>
+		  <li><a href="#about">Item</a></li>
+		  <li class="icon">
+		    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+		  </li>
+		</ul>
+	</div>
+
+	<div class="content">
+		<div class="row" id="myContRow">
+		  <div class="pollen-content" data-size="1x1"><div class="img"><div class="overlay"><p id="content1">Error</p></div><img src="1.jpg"></img></div></div>
+		  <div class="pollen-content" data-size="1x1"><div class="img"><div class="overlay"></div><img src="1.jpg"></img></div></div>
+		  <div class="pollen-content" data-size="1x1"></div>
+		  <div class="pollen-content" data-size="1x1"></div>
+		  <div class="pollen-content" data-size="1x1"></div>
+		  <div class="pollen-content" data-size="2x1"><div class="img"><div class="overlay"><p>"Blablablaba, blablablabla"</p></div><img src="3.jpg"></img></div></div>
+		  <div class="pollen-content" data-size="1x1"></div>
+		  <div class="pollen-content" data-size="1x1" style="background-color: #333333;"></div>
+		  <div class="pollen-content" data-size="2x1"></div>
+		  <div class="pollen-content" data-size="2x1"></div>
+		  <div class="pollen-content" data-size="1x1"></div>
+		  <div class="pollen-content" data-size="1x1" style="background-color: #333333;"></div>
+		  <div class="pollen-content" data-size="1x1"></div>
+		  <div class="pollen-content" data-size="1x1"></div>
+		  <div class="pollen-content" data-size="1x1" style="background-color: #333333;"></div>
+		</div>
+	</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<script src="./Main.js"></script>
+</body>
+</html>
